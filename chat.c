@@ -64,12 +64,8 @@ void client_chat(int sockfd) {
  */
 int server_setup(void) {
   struct addrinfo hints, *servinfo;
-  struct sockaddr_storage ca;
-  int sockfd = -1, cfd, rbytes;
-  socklen_t csocklen = sizeof(struct sockaddr_in);
-  int nready;
+  int sockfd = -1;
   int val;
-  int wfd, wbytes;
 
   // implement me
 
