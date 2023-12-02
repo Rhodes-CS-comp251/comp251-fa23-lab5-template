@@ -184,7 +184,7 @@ int main(int argc, char **argv) {
   g.timeout = 2000;  // in milliseconds
   //g.timeout = 20;  // use for real
 
-  while ((c = getopt(argc, argv, "ch:p:v")) != -1) {
+  while ((c = getopt(argc, argv, "ch:p:t:v")) != -1) {
     switch (c) {
       case 'c':
         g.mode = Client;
